@@ -230,3 +230,6 @@ To run the tests, execute the following command with the Docker container runnin
 docker compose exec api pytest
 ```
 
+## Cloud Deployment
+You can test the API on the cloud using the following link:
+[https://ghibli.danielmojica.me/docs](https://ghibli.danielmojica.me/docs) to see the OpenAPI documentation.
