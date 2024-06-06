@@ -1,0 +1,14 @@
+alembic
+bcrypt
+cryptography
+fastapi
+psycopg2-binary
+pydantic
+SQLAlchemy
+uvicorn
+redis
+httpx
+pydantic-settings
+pyjwt
+passlib
+pytest
