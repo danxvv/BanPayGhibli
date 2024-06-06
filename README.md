@@ -250,3 +250,15 @@ You can test the API on the cloud using the following link:
 Provide a Postman collection to test the API:
 `BanPay_Home_Assignment.postman_collection.json` Just import it to your Postman with project already running or **change the URL to the cloud deployment provided above**.
 Collection is already set up with the environment variables to make it easier to test.
+
+## Users to test
+
+| User            | Email                     | Password       |
+|-----------------|---------------------------|----------------|
+| Films User      | user_films@example.com    | password123    |
+| People User     | user_people@example.com   | password123    |
+| Locations User  | user_locations@example.com| password123    |
+| Species User    | user_species@example.com  | password123    |
+| Vehicles User   | user_vehicles@example.com | password123    |
+| Admin User      | user_admin@example.com    | password123    |
+
