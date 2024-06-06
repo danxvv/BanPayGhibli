@@ -1,24 +1,24 @@
 # Users Ghibli API
 
 ## Table of Contents
+
 - [Project Description](#project-description)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
-  - [Docker Way](#docker-way)
-  - [Docker Compose Way](#docker-compose-way)
-  - [Local Way](#local-way)
 - [Usage](#usage)
   - [Endpoints](#endpoints)
-    - [Common Words](#common-words)
-    - [Parts](#parts)
-- [Commands](#commands)
+- [Testing](#testing)
+- [Cloud Deployment](#cloud-deployment)
+- [Postman Collection](#postman-collection)
 
 ## Project Description
+
 This project is a take-home coding challenge for BanPay. Its an API that allows all CRUD on an Users Table adding the feature to call the Ghibli API based on user's role.
 
 ## Technologies Used
+
 - Python
 - FastAPI
 - SQLAlchemy
@@ -28,6 +28,7 @@ This project is a take-home coding challenge for BanPay. Its an API that allows 
 - Docker Compose
 
 ## Features
+
 - Complete CRUD operations on the Users table
 - Role-based access control
 - Authentication with JWT
@@ -36,28 +37,36 @@ This project is a take-home coding challenge for BanPay. Its an API that allows 
 - Dockerized
 
 ## Prerequisites
+
 - Docker
 - Python
-- 
+- Postman (optional)
+
 ## Getting Started
 
 1. Clone the repository:
+
    ```bash
    git clone <repository_url> users_ghibli_api
    ```
+
 2. Change directory to the project root:
+
    ```bash
    cd users_ghibli_api
    ```
+
 3. Copy the `.env.example` file to `.env`:
+
    ```bash
    cp .env.example .env
    ```
+
 4. Run the Docker containers:
+
    ```bash
    docker-compose up
    ```
-
 
 ## Usage
 
@@ -110,7 +119,7 @@ This project is a take-home coding challenge for BanPay. Its an API that allows 
 
 **GET** `/api/v1/users/{user_id}`
 
-- **Summary**: Retrieve a user by ID. 
+- **Summary**: Retrieve a user by ID.
 - **Headers**:
   - `Authorization`: `Bearer {access_token}`
 - **Parameters**:
@@ -226,10 +235,18 @@ This project is a take-home coding challenge for BanPay. Its an API that allows 
 ## Testing
 
 To run the tests, execute the following command with the Docker container running:
+
 ```bash
 docker compose exec api pytest
 ```
 
 ## Cloud Deployment
+
 You can test the API on the cloud using the following link:
 [https://ghibli.danielmojica.me/docs](https://ghibli.danielmojica.me/docs) to see the OpenAPI documentation.
+
+## Postman Collection
+
+Provide a Postman collection to test the API:
+`BanPay_Home_Assignment.postman_collection.json` Just import it to your Postman with project already running or **change the URL to the cloud deployment provided above**.
+Collection is already set up with the environment variables to make it easier to test.
